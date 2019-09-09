@@ -1,0 +1,22 @@
+<body><fieldset>movie list</fieldset> <br>
+<p>search:
+   <input type="search" [(ngModel)]="search">
+<button type="button">Click</button></p>
+<table width="80%">
+    <thead>
+        <tr>
+            <td>Movie Name</td>
+            <td>Language</td>
+            <td>Genre</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let val of value ">
+          <td>{{val.name}}</td>
+            <td>{{val.language}}</td>
+            <td>{{val.genre}}</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+

@@ -1,0 +1,16 @@
+    <body><p>Movie</p>
+    <form
+     [formGroup]="movie">
+        Movie Name:
+        <input type="text" name="moviename" formControlName="name" placeholder="Movie Name">
+        <br /><br>
+        Language:
+        <input type="text" name="language" formControlName="language" placeholder="Language">
+        <br /><br>
+        Genre:
+        <input type="text" name="genre" formControlName="genre" placeholder="Genre">
+        <br/><br>
+        <button (click)="horror(movie.value)">Save</button><br>
+        <button type="button" (click)="rate()">Goto List of movies</button>
+    </form>
+</body>

@@ -1,0 +1,13 @@
+<body>
+<p>Login Form</p>
+<form [formGroup]="loginform">
+    Name:
+    <input type="text" name="username" formControlName="name" placeholder="Enter name">
+    <br /><br>
+    Password:
+    <input type="password" name="password" formControlName="pass" placeholder="Enter password">
+    <br /><br>
+    <button (click)="login(loginform.value)">Save</button><br>
+    <button type="button" (click)="see()">login</button>
+</form>
+</body>

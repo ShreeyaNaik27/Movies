@@ -1,0 +1,11 @@
+<body><form [formGroup]="signupForm">
+    <p>UserName: </p>
+    <input type="text" id="name" formControlName="name" />
+    <p>Password:</p>
+    <input type="password" id="pass" formControlName="pass" />
+    <p>Confirm Password:</p>
+    <input type="password" id="cpass" formControlName="cpass"><br><br>
+    <button (click)="signup(signupForm.value)">Add User</button>
+    <p id="a">Already have an account?<u (click)="log()">login</u></p>
+</form>
+</body>
